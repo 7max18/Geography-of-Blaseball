@@ -185,4 +185,4 @@ fig.add_trace(go.Surface(z=z_head,x=x_idw_list,y=y_idw_list))
 fig.update_layout(
     title = 'Season ' + str(mySeason) + ', Day ' + str(myDay) + ', ' + matches[myMatch - 1][0] + ' vs ' + matches[myMatch - 1][1],
     scene=dict(aspectratio=dict(x=2, y=2, z=0.5),xaxis = dict(range=[x_min,x_max],),yaxis = dict(range=[y_min,y_max])))
-go_offline.plot(fig,filename='Game.html',validate=True, auto_open=True)
+go_offline.plot(fig,filename= 'S' + str(mySeason) + 'D' + str(myDay) + 'M' + str(myMatch) + '.html',validate=True, auto_open=True)
